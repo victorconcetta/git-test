@@ -111,6 +111,34 @@ body{
 .hamburguer{
     display: none;
 }
+.box{
+    display: flex;
+    width: auto;
+    background: rgb(234, 234, 234);
+    margin: 15px;
+    height: auto;
+    color: black;
+    justify-content: center;
+    text-align: justify;
+    padding: 10;
+    font-size: 12pt;
+    font-family: arial;
+    border: 4px solid black;
+    font-weight: bold;
+}
+.logo{
+    display: none;
+    width: calc(100%-30px);
+    height: 50px;
+    padding: 10px;
+    justify-content: center;
+    flex: 1;
+    font-weight: bold;
+
+}
+
+
+
 
 @media screen and (max-width: 768px) {
 body{
@@ -139,4 +167,7 @@ body{
         justify-content: flex-start;
         padding: 0 20px;       
     }
+.logo{
+    display: flex;
+}
 }
