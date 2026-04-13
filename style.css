@@ -1,5 +1,110 @@
 body{
     background: black;
-    color: blue;
-    font-size: 48pt;
+    margin: 0px;
+    height: 100vh;
+    color: white;
+}
+.geral{
+    display: flex;
+    background: navy;
+    width: 100%;
+    height: 100vh;
+}
+.menu{
+    background: yellow;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    margin: 0px;
+    top: 0px;
+    padding-top: 0px;
+}
+.ulmenu{
+    display: flex;
+    list-style: none;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    margin: 0px;
+    top: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+}
+.botoes{
+    display: flex;
+    background: black;
+    color: white;
+    font-family: arial;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: center;
+    height: 100%;
+    flex: 1;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.9s;
+    position: relative;
+}
+.botoes:hover{
+    background: blue;
+}
+.conteudo{
+    display: flex;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    margin-top: 50px;
+}
+.ifconteudo{
+    width: 100%;
+    height: 100vh;
+    border: none;
+    padding: 10px;
+}
+.subul{
+    visibility: hidden;
+    display: flex;
+    position: absolute;
+    top: 50px;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    transition: 0.4s;
+    opacity: 0;
+}
+.botoes1{
+    display: flex;
+    background: grey;
+    color: white;
+    font-family: arial;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    justify-content: center;
+    height: 100%;
+    flex: 1;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.9s;
+    position: relative;
+}
+.botoes1:hover{
+    background: blacK;
+}
+.botoes:hover .subul {
+    visibility: visible;
+    opacity: 1;
+}
+.a1{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    justify-content: center;
 }
