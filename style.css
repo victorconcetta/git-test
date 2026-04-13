@@ -3,7 +3,7 @@ body{
     margin: 0px;
     height: 100vh;
     color: white;
-
+}
 .geral{
     display: flex;
     background: navy;
@@ -197,8 +197,8 @@ body{
 .logo{
     display: flex;
 }
-.hamburguer:focus ~ .menuverti{
+.hamburguer:focus ~ .menuverti,
+.menuverti:focus-within,
+.menuverti:hover {
     display: flex;
-}
-}
 }
