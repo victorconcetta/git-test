@@ -138,17 +138,18 @@ body{
 .menuverti{
     display: none;
     top: 50px;
-    width: 300px;
+    width: 100%;
     height: auto;
     background: black;
     position: absolute;
     flex-direction: column;
+
 }
 .ulverti{
     display: flex;
     list-style: none;
     padding-left: 0;
-    width: 300px;
+    width: 100%;
     justify-content: center;
         flex-direction: column;
 }
@@ -197,8 +198,6 @@ body{
 .logo{
     display: flex;
 }
-.hamburguer:focus ~ .menuverti,
-.menuverti:focus-within,
-.menuverti:hover {
+#bt_menu:checked ~ .menuverti {
     display: flex;
 }
