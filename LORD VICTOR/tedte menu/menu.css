@@ -1,0 +1,77 @@
+body {
+    margin: 0px;
+}
+
+.md {
+    width: 100%;
+    height: 45px;
+    background: black;
+}
+
+/* Menu Principal */
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    color: white;
+    font-weight: bold;
+    font-family: arial;
+    font-size: 20pt;
+    background: black;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    transition: background 1s;
+    position: relative; /* Necessário para o submenu se ancorar */
+}
+
+li:hover {
+    background: gray;
+}
+
+/* SUBMENU (A caixa azul que flutua) */
+.uldrop {
+    display: flex;
+    flex-direction: column; /* Itens um embaixo do outro */
+    opacity: 0;
+    visibility: hidden;
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    z-index: 10;
+    transition: all 1s ease;
+    padding: 0;
+    transform: translateY(-100px);
+}
+
+/* ITENS DO SUBMENU (Resetando o estilo do li principal) */
+.uldrop li {
+    flex: none;      /* Não deixa eles tentarem esticar a barra preta */
+    width: 100%;     /* Ocupa a largura toda do azul */
+    height: 40px;    /* Altura menor */
+    font-size: 14pt; 
+    background-color: black; /* Garante que não fiquem pretos */
+    transition: background 0.3s;
+    top: 100px;
+}
+
+/* Hover específico para os links azuis */
+.uldrop li:hover {
+    background-color: aqua;
+}
+
+/* Gatilho para mostrar o menu */
+.lidrop:hover .uldrop {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
