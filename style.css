@@ -112,4 +112,7 @@ body{
 body{
     background: black;
 }
+.ulmenu{
+    display: none;
+}
 }
