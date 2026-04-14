@@ -163,6 +163,7 @@ body{
     padding-bottom: 10px;
     justify-content: center;
     border: 2px solid rgb(64, 64, 64);
+    transition: 1s;
 }
 .botoesverti:hover{
     background: gray;
